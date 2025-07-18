@@ -1,0 +1,152 @@
+.body {
+    background-color: #002a46;
+}
+
+.head {
+    font-family: Helvetica, sans-serif;
+    color: #007ACC;
+    text-align: center;
+    font-size: 100;
+    margin: 10;
+}
+
+.vbox {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 10px;
+    width: 40.62%;
+    max-width: 650;
+    height: auto;
+    border-radius: 10%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.vbox2 {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 10px;
+}
+
+.hbox {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.label1 {
+    color: #002a46;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 12.5%;
+    margin-bottom: 10px;
+    width: 25%;
+    max-width: 162.5;
+}
+
+.input1 {
+    width: 50%;
+    max-width: 375px;
+    margin-right: 12.5%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input1:focus {
+    border-color: #007ACC;
+    box-shadow: 0 0 6px rgba(0, 122, 204, 0.5);
+    outline: none;
+}
+
+.label2 {
+    color: #002a46;
+    font-weight: bold;
+    width: 57.69%;
+    max-width: 375;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.input2 {
+    margin-left: 35%;
+    font-size: 14px;
+    color: #002a46;
+}
+
+.input2 input[type="checkbox"],
+.input2 input[type="radio"] {
+    transform: scale(1.2);
+    margin-right: 5px;
+    accent-color: #007ACC;
+}
+
+.boutonSubmit {
+    background-color: #007ACC;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    width: 25%;
+    max-width: 375px;
+    margin-left: 34.5%;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.boutonSubmit:hover {
+    background-color: #005fa3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.boutonSubmit:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* 🌐 MEDIA QUERY - Petits écrans */
+@media (max-width: 768px) {
+    .vbox {
+        width: 90%;
+        border-radius: 6%;
+    }
+
+    .label1, .label2 {
+        width: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: left;
+    }
+
+    .input1 {
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .input2 {
+        margin-left: 5%;
+    }
+
+    .boutonSubmit {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .head {
+        font-size: 48px;
+    }
+}

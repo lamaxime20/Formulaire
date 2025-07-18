@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Formulaire Dev</title>
+    </head>
+    <body class="body">
+        <header class="head">SoftDev</header>
+        <form action="" method="post">
+            <div class="vbox">
+                <br>
+                <div class="hbox">
+                    <label class="label1" for="nom">Nom: </label>
+                    <input class="input1" type="text" id="nom" name="nom" placeholder="Entrer votre nom" required>
+                </div>
+                <div class="hbox">
+                    <label class="label1" for="email">Email: </label>
+                    <input class="input1" type="email" id="email" name="email" placeholder="Entrer votre email" required>
+                </div>
+                <div class="hbox">
+                    <label class="label1" for="age">Age: </label>
+                    <input class="input1" type="number" id="age" name="age" placeholder="Votre age" required>
+                </div>
+                <div class="hbox">
+                    <label class="label1" for="frequence">Fréquence de travail</label>
+                    <select class="input1" id="frequence" name="frequence" required>
+                        <option value="">Selectionnez</option>
+                        <option value="journalier">Journalier</option>
+                        <option value="mensuel">mensuel</option>
+                        <option value="annuel">Annuel</option>
+                    </select>
+                </div>
+                <label class="label2">Etes vous engagé à travailler ?</label>
+                <div class="hbox">
+                    <label class="input2" for="opt1">
+                        <input type="radio" id="opt1" name="option">Oui
+                    </label>
+                    <label for="opt2">
+                        <input type="radio" id="opt2" name="option">Non
+                    </label>
+                </div>
+                <label class="label2">Langages maitrisés
+                    <small>(Selectionnez un ou plusieurs)</small>
+                </label>
+                <div class="vbox2">
+                    <label class="input2" for="inpt1">
+                        <input type="checkbox" id="inpt1" name="inpt1">Java
+                    </label>
+                    <label class="input2" for="inpt2">
+                        <input type="checkbox" id="inpt2" name="inpt2">C++
+                    </label>
+                    <label class="input2" for="inpt3">
+                        <input type="checkbox" id="inpt3" name="inpt3">Python
+                    </label>
+                </div>
+                <br>
+                <input class="boutonSubmit" type="submit" value="Soumettre">
+                <br>
+            </div>
+        </form>
+    </body>
+</html>
