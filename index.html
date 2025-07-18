@@ -7,7 +7,7 @@
     </head>
     <body class="body">
         <header class="head">SoftDev</header>
-        <form action="" method="post">
+        <form id="monFormulaire" method="post">
             <div class="vbox">
                 <br>
                 <div class="hbox">
@@ -20,7 +20,7 @@
                 </div>
                 <div class="hbox">
                     <label class="label1" for="age">Age: </label>
-                    <input class="input1" type="number" id="age" name="age" placeholder="Votre age" required>
+                    <input class="input1" type="number" id="age" name="age" placeholder="Votre age" min="1" step="1" required>
                 </div>
                 <div class="hbox">
                     <label class="label1" for="frequence">Fréquence de travail</label>
@@ -34,10 +34,10 @@
                 <label class="label2">Etes vous engagé à travailler ?</label>
                 <div class="hbox">
                     <label class="input2" for="opt1">
-                        <input type="radio" id="opt1" name="option">Oui
+                        <input type="radio" id="opt1" name="option" value="Oui">Oui
                     </label>
                     <label for="opt2">
-                        <input type="radio" id="opt2" name="option">Non
+                        <input type="radio" id="opt2" name="option" value="Non">Non
                     </label>
                 </div>
                 <label class="label2">Langages maitrisés
@@ -45,13 +45,13 @@
                 </label>
                 <div class="vbox2">
                     <label class="input2" for="inpt1">
-                        <input type="checkbox" id="inpt1" name="inpt1">Java
+                        <input type="checkbox" id="inpt1" name="inpt" value="Java">Java
                     </label>
                     <label class="input2" for="inpt2">
-                        <input type="checkbox" id="inpt2" name="inpt2">C++
+                        <input type="checkbox" id="inpt2" name="inpt" value="C++">C++
                     </label>
                     <label class="input2" for="inpt3">
-                        <input type="checkbox" id="inpt3" name="inpt3">Python
+                        <input type="checkbox" id="inpt3" name="inpt" value="Python">Python
                     </label>
                 </div>
                 <br>
@@ -59,5 +59,6 @@
                 <br>
             </div>
         </form>
+        <script src="createJson.js"></script>
     </body>
 </html>
